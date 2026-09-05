@@ -1,0 +1,65 @@
+:root {
+  --ink: #171a18; --muted: #6b7570; --line: #d8dcd7;
+  --accent: #3c5c86; --bg: #faf9f5; --panel: #ffffff;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e7eae7; --muted:#8b9591; --line:#272d2f; --accent:#85a5c7; --bg:#0e1113; --panel:#15181a; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+
+header.hero { padding: 4rem 0 2.5rem; text-align: center; }
+header.hero img.icon {
+  width: 108px; height: 108px; border-radius: 24px; display: block; margin: 0 auto 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 12px 32px -12px rgba(0,0,0,.3);
+}
+h1 { font-size: 2.4rem; margin: 0 0 .5rem; letter-spacing: -0.025em; line-height: 1.1; }
+.tagline { font-size: 1.15rem; color: var(--muted); margin: 0 auto; max-width: 30rem; }
+
+.status {
+  display: inline-block; margin-top: 1.75rem; padding: .5rem 1rem;
+  border: 1px solid var(--line); border-radius: 999px;
+  font-size: .9rem; color: var(--muted); background: var(--panel);
+}
+
+h2 { font-size: 1.35rem; margin: 3rem 0 .75rem; letter-spacing: -0.015em; }
+h3 { font-size: 1.02rem; margin: 1.75rem 0 .35rem; }
+p { margin: 0 0 1rem; }
+a { color: var(--accent); }
+strong { font-weight: 650; }
+
+.shots {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+  margin: 2.5rem 0 1rem;
+}
+.shots figure { margin: 0; }
+.shots img {
+  width: 100%; height: auto; display: block;
+  border: 1px solid var(--line); border-radius: 14px;
+}
+.shots figcaption { font-size: .82rem; color: var(--muted); margin-top: .5rem; text-align: center; }
+@media (max-width: 600px) { .shots { grid-template-columns: 1fr; gap: 1.75rem; } }
+
+.claim {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 14px; padding: 1.5rem 1.6rem; margin: 1.5rem 0;
+}
+.claim p:last-child { margin-bottom: 0; }
+.test { font-size: 1.05rem; }
+
+ul { padding-left: 1.25rem; } li { margin: .4rem 0; }
+.no li::marker { content: "✕  "; color: var(--muted); }
+
+footer {
+  border-top: 1px solid var(--line); margin-top: 4rem;
+  padding: 1.5rem 0 4rem; font-size: .9rem; color: var(--muted);
+}
+footer a { color: var(--muted); }
+footer nav { margin-bottom: .5rem; }
+footer nav a { margin-right: 1.25rem; }
