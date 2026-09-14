@@ -28,6 +28,13 @@ h1 { font-size: 2.4rem; margin: 0 0 .5rem; letter-spacing: -0.025em; line-height
   font-size: .9rem; color: var(--muted); background: var(--panel);
 }
 
+.button {
+  display: inline-block; margin-top: .75rem; padding: .7rem 1.4rem;
+  background: var(--accent); color: #fff !important; text-decoration: none;
+  border-radius: 999px; font-weight: 650; font-size: 1rem;
+}
+.button:hover { filter: brightness(1.08); }
+
 h2 { font-size: 1.35rem; margin: 3rem 0 .75rem; letter-spacing: -0.015em; }
 h3 { font-size: 1.02rem; margin: 1.75rem 0 .35rem; }
 p { margin: 0 0 1rem; }
