@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User guide — Fog Log</title>
+<meta name="description" content="How every part of Fog Log works: the daily check-in, what you take and its reminders, the optional trackers, the Trends screen, exports, backups, and settings.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/icon.jpg">
+<style>
+  .toc { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.4rem; margin: 1.5rem 0 2.5rem; }
+  .toc ul { margin: 0; columns: 2; column-gap: 2rem; }
+  .toc li { break-inside: avoid; margin: .25rem 0; }
+  @media (max-width: 600px) { .toc ul { columns: 1; } }
+  .note { border-left: 3px solid var(--accent); padding: .1rem 0 .1rem 1rem; color: var(--muted); margin: 1rem 0 1.25rem; }
+  dl { margin: 0 0 1rem; } dt { font-weight: 650; margin-top: .9rem; } dd { margin: .2rem 0 0 0; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <h1>Fog Log — User guide</h1>
+  <p class="lede">Everything the app does, screen by screen. Fog Log is deliberately small: one check-in a day, the things you take, and charts that show what your own ratings did. This page is longer than the app is, because it explains the reasoning as well as the taps.</p>
+
+  <nav class="toc">
+    <ul>
+      <li><a href="#start">Getting started</a></li>
+      <li><a href="#today">The Today screen</a></li>
+      <li><a href="#ratings">Rating your day</a></li>
+      <li><a href="#doses">Ticking off doses</a></li>
+      <li><a href="#trackers">The optional trackers</a></li>
+      <li><a href="#items">What I take</a></li>
+      <li><a href="#reminders">Reminders</a></li>
+      <li><a href="#trends">The Trends screen</a></li>
+      <li><a href="#cycle">Across your cycle</a></li>
+      <li><a href="#export">Exporting for a doctor</a></li>
+      <li><a href="#backup">Backing up and restoring</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#privacy">Privacy and permissions</a></li>
+      <li><a href="#tips">A few habits that help</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="start">Getting started</h2>
+  <p>The first time you open Fog Log it tells you what it is and what it isn't, and asks for the one permission it needs: notifications, so reminders can reach you. Then it asks what you want to track. Every switch on that screen is already set to a sensible default, so tapping Continue without changing anything gives you the five ratings, your medicines and supplements, and air pressure. Weight, exercise, water, alcohol and the menstrual cycle are off until you want them.</p>
+  <p>Nothing you decide there is permanent. All of it lives in Settings, and turning a tracker off only hides it; the days you already logged are kept.</p>
+  <p>There is no account to create and nothing to sign in to. The app works the same with no internet connection at all.</p>
+
+  <h2 id="today">The Today screen</h2>
+  <p>This is where you'll spend almost all of your time, and it is built to take under a minute. The date sits at the top, large, because on a foggy day that is a real question. The arrows step back to earlier days if you forgot one, or forward again; a link takes you straight back to today.</p>
+  <p>Below the date: your ratings, then the doses due today, then whichever optional trackers you've switched on, then air pressure if the phone has read it, and a notes box at the bottom for anything worth remembering.</p>
+
+  <h2 id="ratings">Rating your day</h2>
+  <p>Each rating is a row of numbered buttons. Tap the number that fits. <strong>Higher is always better</strong>, for every rating: 10 is completely clear, completely rested, calm, strongly motivated, or slept well; 1 is heavy fog, exhausted, overwhelmed, no motivation, or a terrible night. Sleep runs 1 to 5, the rest 1 to 10. The words under each row remind you which end is which.</p>
+  <p>Tapping the number you already chose clears it. A day with no rating is a gap on the chart, which is the honest way to show a day you didn't record; the app never fills one in for you.</p>
+  <p>A small mark under one of the buttons shows yesterday's number. It is there because people judge "worse than yesterday" far more reliably than "is this a six or a seven," but it is never pre-selected. Every number you record is a deliberate tap. If today is the same as yesterday, tap the same number.</p>
+  <p>You can rate fewer things. Settings lets you switch any of the five off, and the ones you'll actually answer every day are the ones worth keeping.</p>
+
+  <h2 id="doses">Ticking off doses</h2>
+  <p>Everything you've added on the What I take screen that is due today appears here. Tap the circle, or anywhere on the row, to record a dose. An item taken more than once a day shows a count, such as 1 of 2, and each tap adds one. If you take an extra dose, it lets you record that too, and shows it as "2 of 2 · 1 extra" rather than pretending the arithmetic broke.</p>
+  <p>Swipe a row to the right to mark it <strong>skipped</strong>. A skip is a decision, not a lapse, and the app keeps the two apart: skipped doses come out of the adherence calculation rather than counting against it, and the number of skips is always shown next to the percentage so nothing is hidden.</p>
+  <p>As-needed items sit at the bottom of the list and simply count how many times you took them.</p>
+
+  <h2 id="trackers">The optional trackers</h2>
+  <p>Each of these is off until you switch it on, either on the first-run screen or in Settings under <em>What else to track</em>.</p>
+  <dl>
+    <dt>Weight</dt>
+    <dd>A number typed on the days you weigh yourself, in pounds or kilograms to match your units. Days you don't weigh stay blank.</dd>
+    <dt>Exercise</dt>
+    <dd>A single switch: did you exercise today. What counts is up to you. Trends later compares your ratings on exercise days with the rest.</dd>
+    <dt>Water</dt>
+    <dd>A running total. Tap <strong>Glass</strong> or <strong>Bottle</strong> each time you finish one, and the minus if you overshoot. On a US phone a glass is 8 fl oz and a bottle 16; on a metric phone, 250 ml and 500 ml. The total shows in your units.</dd>
+    <dt>Alcohol</dt>
+    <dd>Tap <strong>Drink</strong> for each standard drink: 12 oz of beer, 5 oz of wine, or 1.5 oz of spirits. Tap <strong>None</strong> on a day you didn't drink. That zero matters, because it is what lets Trends compare the mornings after a drink with the mornings after none.</dd>
+    <dt>Menstrual cycle</dt>
+    <dd>A switch for each day you're bleeding. Mark every day, not just the first. The app works out where each cycle starts and how long your period lasts, and a missed day inside a period won't split it in two. See <a href="#cycle">Across your cycle</a>.</dd>
+    <dt>Air pressure</dt>
+    <dd>Not something you enter. Your iPhone contains a barometer, and Fog Log reads it once a day when you open the app, then shows the reading and how much it has changed since yesterday. It is the pressure where you are, which sits below the sea-level figure a forecast quotes; the day-to-day change is the part worth watching. This is on by default and costs nothing to leave on.</dd>
+  </dl>
+
+  <h2 id="items">What I take</h2>
+  <p>Add each prescription, over-the-counter medicine, supplement, or anything else you take. As you type the name, suggestions appear from two reference lists built into the app, one of drug names from the US National Library of Medicine and one of supplement ingredients from the NIH. Tap one to use its spelling, or ignore them and type whatever you actually take. Nothing you type is sent anywhere; the lists are inside the app.</p>
+  <p>The dose is free text: "100 mg", "2 caps", whatever you'd say out loud. For a drug, the common strengths are offered as buttons under the field, but the app never picks one for you.</p>
+  <p>Schedules: every day, certain days of the week, every few days counted from a start date, or as needed. An item can expect several doses a day. A start date is optional and worth setting when you add something you began a while ago, because the before-and-after comparison on Trends counts from it.</p>
+  <p>When you stop taking something, <strong>archive</strong> it rather than deleting it. Archiving records the date you stopped, keeps every day you already logged, and removes it from today's list. Delete only if you added it by mistake.</p>
+
+  <h2 id="reminders">Reminders</h2>
+  <p>Each item can have as many reminder times as you like. Reminders are ordinary iPhone notifications, created on the phone; no server is involved, and they fire whether or not the app is open.</p>
+  <p>They know what you've already done. Tick off the morning dose and the morning reminder for that day is cancelled. Skip a day and that day's reminders go with it.</p>
+  <p><strong>You can act on a reminder without opening the app.</strong> Long-press it, or pull it down when it appears as a banner, and two buttons appear: <strong>Taken</strong> and <strong>Skip today</strong>. Tap one and the dose is recorded exactly as if you'd done it on the Today screen.</p>
+  <p>Separately, Settings has a daily check-in reminder that asks how today was. It stays quiet on any day you've already rated.</p>
+  <p>One limit worth knowing about: iOS lets an app keep only about sixty reminders queued at once. With a long list of items, that is a few days' worth. The app refills the queue every time you open it, every time you tap Taken or Skip, and, when iOS allows, in the background. If the queue ever does run out, the last reminder tells you so plainly, rather than leaving you to wonder whether silence meant nothing was due.</p>
+
+  <h2 id="trends">The Trends screen</h2>
+  <p>Charts appear once you've rated a couple of days, but trends in something like brain fog only mean anything over weeks. Expect the first useful read at around three.</p>
+  <p>At the top, choose a window: 14, 30, or 90 days. Then, in order:</p>
+  <dl>
+    <dt>Summary tiles</dt>
+    <dd>The average of each rating over the window, with how the latest seven days compare to the seven before; the share of scheduled doses you took, with skips counted separately; and your current run of days logged in a row.</dd>
+    <dt>One chart per rating</dt>
+    <dd>Dots are single days. The line is a seven-day average, and it is the only part worth reading. It is a true seven calendar days: if fewer than three of the last seven days were logged, the line stops rather than guessing.</dd>
+    <dt>Water, drinks, weight, air pressure</dt>
+    <dd>Each on its own chart, lined up on the same dates as the ratings so you can see whether things move together. Moving together would not prove one caused the other, and the app says so.</dd>
+    <dt>Exercise days</dt>
+    <dd>Your average rating on days you exercised, against days you didn't, once there are at least three of each. It runs both ways: people move more on days they already feel better.</dd>
+    <dt>The day after</dt>
+    <dd>Your average rating on mornings that followed a drink, against mornings that followed a logged None. Shifted by a day on purpose, because that is when alcohol shows up in fog and sleep.</dd>
+    <dt>Before and after</dt>
+    <dd>The question the app exists to answer. For each item you started inside the logged period, with enough days either side, the average of every rating in the three weeks before it and the three weeks after. Signed so that "better by" always means better, whichever way the number went.</dd>
+    <dt>Week by week</dt>
+    <dd>A table of weekly averages and how many days each week were logged.</dd>
+    <dt>Review date</dt>
+    <dd>If you set one in Settings, a countdown to it. Deciding in advance when you'll look at the numbers honestly is what keeps a trial from drifting on indefinitely.</dd>
+  </dl>
+  <div class="note">Every comparison on this screen is descriptive. It shows what your own ratings did around an event. Plenty of other things change at the same time, and the app never claims to know which one mattered.</div>
+
+  <h2 id="cycle">Across your cycle</h2>
+  <p>With cycle tracking on and two complete cycles recorded, Trends adds a section that averages brain fog and fatigue by day of the cycle, across every cycle you've logged. This is the shape you can't see living through it one day at a time.</p>
+  <p>Two ways to line the cycles up. <em>From period start</em> counts forward from day one. <em>Before next period</em> counts backward, so day −1 is the day before the next period began. The second exists because cycle length varies far more than the stretch before a period does: if your cycles run 24 days one month and 45 the next, counting forward puts the premenstrual days of one against the middle of the other and averages a real pattern into a flat line. Counting backward keeps them together. When your cycles vary by more than a week, the app opens on the backward view by itself and tells you why.</p>
+  <p>Thinner, fainter parts of the line come from fewer cycles. Trust them less. The summary shows your shortest and longest cycle and the median, not an average, because an average of very different cycles describes none of them.</p>
+  <p>The app makes no predictions about your cycle: no fertile window, no ovulation estimate. Just your own ratings, arranged by day.</p>
+
+  <h2 id="export">Exporting for a doctor</h2>
+  <p>Settings → <strong>Export for an appointment</strong> produces two files and lets you share them however you like. The PDF is written to be read in the few minutes an appointment allows: the date range, summary figures, the charts, everything you were taking with its dose, schedule, start and stop dates, and the days you left notes with that day's ratings beside them. The CSV spreadsheet holds every number behind it, one row per day, for anyone who wants to check the working.</p>
+  <p>The PDF follows your settings: ratings you've switched off don't appear, and weight, water and pressure print in your units. Cycle data is included by default and can be left out with a switch in Settings, which takes one tap and is there for exactly the appointment where it isn't relevant.</p>
+
+  <h2 id="backup">Backing up and restoring</h2>
+  <p>Because your log lives on your phone and nowhere else, a lost phone is a lost log. Settings → <strong>Back up to a file</strong> writes the whole thing to a single file you save anywhere: iCloud Drive, Files, or an email to yourself. Do it now and again.</p>
+  <p>Settings → <strong>Restore from a backup</strong> reads one back, and a backup file tapped in Mail, Files or an AirDrop offers to open in Fog Log directly. Restoring <em>merges</em>: it never wipes what's already on the phone, and where both hold the same day, the newer one wins. You can restore the same file twice and nothing doubles up.</p>
+
+  <h2 id="settings">Settings</h2>
+  <dl>
+    <dt>What to rate each day</dt><dd>Switch any of the five ratings off. Days already rated keep their numbers.</dd>
+    <dt>What else to track</dt><dd>The optional trackers. Turning medicines off also hides the What I take tab. Nothing is ever deleted by a switch.</dd>
+    <dt>Units</dt><dd>Match your region, or choose metric or US. Only the display changes; the readings are stored the same way, so switching halfway through never bends the history.</dd>
+    <dt>Reminders</dt><dd>The daily check-in reminder and its time. Per-item reminders are set on each item.</dd>
+    <dt>Review date</dt><dd>A date to stop and look at the numbers honestly.</dd>
+    <dt>Your data</dt><dd>Export, backup, restore, and <strong>Delete all my data</strong>, which erases everything from the phone and cannot be undone. Export first if you want a copy.</dd>
+  </dl>
+
+  <h2 id="privacy">Privacy and permissions</h2>
+  <p>Fog Log has no account, no analytics, and no networking code. Everything you enter stays on the device. It asks for two permissions, and works without either: <strong>notifications</strong>, for reminders, and <strong>Motion &amp; Fitness</strong>, which is how iOS gates the barometer. Nothing about your movement is recorded; that permission is the only way an app is allowed to read the pressure sensor. Say no and the app simply doesn't log air pressure. The full <a href="/privacy.html">privacy policy</a> is short and worth reading.</p>
+
+  <h2 id="tips">A few habits that help</h2>
+  <ul>
+    <li>Rate at the same time each day, and set the check-in reminder for it. Consistency matters more than precision.</li>
+    <li>Log the days you feel fine too. A chart with only bad days on it tells you nothing.</li>
+    <li>When you start something, set its start date, and set a review date a few weeks out.</li>
+    <li>Change one thing at a time when you can. The before-and-after comparison is only as clean as what changed.</li>
+    <li>Use the notes. "Slept badly, work deadline" next to a bad week is the context no chart can supply.</li>
+    <li>Back up now and again. It takes two taps.</li>
+  </ul>
+
+  <p>Something missing here, or wrong? Write to <a href="mailto:scott@leveleightllc.com">scott@leveleightllc.com</a>.</p>
+</div>
+
+<footer><div class="wrap"><nav><a href="/">Fog Log</a><a href="/guide.html">User guide</a><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a></nav><div>Fog Log is made by Level Eight LLC, Austin, Texas.</div></div></footer>
+</body>
+</html>
